@@ -1,0 +1,11 @@
+export { Hero } from './Hero';
+export { DownloadButtons } from './DownloadButtons';
+export { Benefits } from './Benefits';
+export { HowItWorks } from './HowItWorks';
+export { GameModes } from './GameModes';
+export { WinningPotential } from './WinningPotential';
+export { SecurityTrust } from './SecurityTrust';
+export { PaymentMethods } from './PaymentMethods';
+export { FAQ } from './FAQ';
+export { FinalCTA } from './FinalCTA';
+export { Footer } from './Footer';
