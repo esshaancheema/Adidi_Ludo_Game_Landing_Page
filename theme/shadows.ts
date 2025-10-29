@@ -3,7 +3,7 @@
  * Text shadows and elevation for better visibility and depth
  */
 
-import {TextStyle, ViewStyle} from 'react-native';
+import { CSSProperties } from 'react';
 
 /**
  * Text Shadow Styles for Better Readability
@@ -12,52 +12,38 @@ import {TextStyle, ViewStyle} from 'react-native';
 export const textShadows = {
   // Subtle shadow for light emphasis
   subtle: {
-    textShadowColor: 'rgba(0, 0, 0, 0.5)',
-    textShadowOffset: {width: 0, height: 1},
-    textShadowRadius: 2,
-  } as TextStyle,
+    textShadow: '0 1px 2px rgba(0, 0, 0, 0.5)',
+  } as CSSProperties,
 
   // Medium shadow for standard readability
   medium: {
-    textShadowColor: 'rgba(0, 0, 0, 0.7)',
-    textShadowOffset: {width: 0, height: 2},
-    textShadowRadius: 4,
-  } as TextStyle,
+    textShadow: '0 2px 4px rgba(0, 0, 0, 0.7)',
+  } as CSSProperties,
 
   // Strong shadow for maximum visibility
   strong: {
-    textShadowColor: 'rgba(0, 0, 0, 0.9)',
-    textShadowOffset: {width: 0, height: 2},
-    textShadowRadius: 6,
-  } as TextStyle,
+    textShadow: '0 2px 6px rgba(0, 0, 0, 0.9)',
+  } as CSSProperties,
 
   // Glow effect for titles and important text
   glow: {
-    textShadowColor: 'rgba(255, 255, 255, 0.5)',
-    textShadowOffset: {width: 0, height: 0},
-    textShadowRadius: 10,
-  } as TextStyle,
+    textShadow: '0 0 10px rgba(255, 255, 255, 0.5)',
+  } as CSSProperties,
 
   // Gold glow for premium elements
   goldGlow: {
-    textShadowColor: 'rgba(255, 215, 0, 0.6)',
-    textShadowOffset: {width: 0, height: 0},
-    textShadowRadius: 8,
-  } as TextStyle,
+    textShadow: '0 0 8px rgba(255, 215, 0, 0.6)',
+  } as CSSProperties,
 
   // Orange glow for CTAs
   orangeGlow: {
-    textShadowColor: 'rgba(255, 146, 52, 0.6)',
-    textShadowOffset: {width: 0, height: 0},
-    textShadowRadius: 8,
-  } as TextStyle,
+    textShadow: '0 0 8px rgba(255, 146, 52, 0.6)',
+  } as CSSProperties,
 
   // Neon glow for special effects
   neonMagenta: {
-    textShadowColor: 'rgba(233, 30, 140, 0.8)',
-    textShadowOffset: {width: 0, height: 0},
-    textShadowRadius: 12,
-  } as TextStyle,
+    textShadow: '0 0 12px rgba(233, 30, 140, 0.8)',
+  } as CSSProperties,
 };
 
 /**
@@ -65,28 +51,16 @@ export const textShadows = {
  */
 export const viewShadows = {
   small: {
-    shadowColor: '#000',
-    shadowOffset: {width: 0, height: 2},
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 2,
-  } as ViewStyle,
+    boxShadow: '0 2px 3.84px rgba(0, 0, 0, 0.25)',
+  } as CSSProperties,
 
   medium: {
-    shadowColor: '#000',
-    shadowOffset: {width: 0, height: 4},
-    shadowOpacity: 0.3,
-    shadowRadius: 4.65,
-    elevation: 4,
-  } as ViewStyle,
+    boxShadow: '0 4px 4.65px rgba(0, 0, 0, 0.3)',
+  } as CSSProperties,
 
   large: {
-    shadowColor: '#000',
-    shadowOffset: {width: 0, height: 6},
-    shadowOpacity: 0.37,
-    shadowRadius: 7.49,
-    elevation: 6,
-  } as ViewStyle,
+    boxShadow: '0 6px 7.49px rgba(0, 0, 0, 0.37)',
+  } as CSSProperties,
 };
 
 export default {textShadows, viewShadows};

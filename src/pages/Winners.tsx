@@ -5,10 +5,6 @@ import {
   FaCrown,
   FaStar,
   FaFire,
-  FaChartLine,
-  FaUsers,
-  FaGamepad,
-  FaCoins,
 } from 'react-icons/fa';
 import { recentWinners, todaysChampions, hallOfChampions, winnersStats } from '../data/winners';
 
